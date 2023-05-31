@@ -12,8 +12,7 @@
 3. Execute a etapa 1 que aparecerá na tela para registrar o Runner
 4. Assim que registrar, irá aparecer “Você criou um novo executor”
 
-[Criando o Runner local](![image](https://github.com/alexandremariano4/template-gitlab-test/assets/89090315/60027316-e268-4112-9b23-1141f72ef416)
-)
+[Criando o Runner local](https://imgur.com/a/bbLr41Y)
 
 1. Vá para ap ágina dos executores/runners novamente para verificar se o runner está online, se estiver, vá para tela de CI/CD→Pipelines
 2.  Execute um commit ou inicie manualmente a pipeline e veja sendo executado
