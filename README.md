@@ -1,4 +1,4 @@
-##Como replicar o cenário - Português
+# Como replicar o cenário - Português
 1. Criar conta, grupo e projeto no gitlab, adicionar a SSH Key
 2. Fazer clone do repositório : https://github.com/alexandremariano4/template-gitlab-test ou use como template para inserir no seu projeto no gitlab
 3. Installe o Runner do gitlab, no meu caso, no windows: https://docs.gitlab.com/runner/install/windows.html (instale o binário para ser mais fácil a utilização)
@@ -19,7 +19,7 @@
 2.  Execute um commit ou inicie manualmente a pipeline e veja sendo executado
 3. Para debugar o container em execução abra o docker desktop e visualize-o sendo executado em tempo de execução.
 
-##How to replicate the scenario - English
+# How to replicate the scenario - English
 1. Create account, group and project in gitlab, add SSH Key
 2. Clone the repository: https://github.com/alexandremariano4/template-gitlab-test or use it as a template to insert in your project on gitlab
 3. Install Runner from gitlab, in my case, on windows: https://docs.gitlab.com/runner/install/windows.html (install the binary to be easier to use)
