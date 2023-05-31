@@ -1,32 +1,24 @@
-image: python
-
-variables:
-  DISPLAY_CONTAINER_NAME: localhost
-  FILE_NAME: chrome_video.mp4
-
+cache: []
 .before_script_templeate: &install-dependencies
   before_script:
     - pip install -r requirements.txt
 
-stages:
-  - "e2e"
-
 
 e2e:
-  stage: e2e
-  cache: []
+  image: python
   <<: *install-dependencies
-  services:  
+  services:
     - name: selenium/standalone-chrome
-      alias: localhost
     - name: selenium/video
-      alias: video
-    
+      variables:
+        DISPLAY_CONTAINER_NAME: selenium__standalone-chrome
+        FILE_NAME: chrome_video.mp4
 
+  variables:
+    FF_NETWORK_PER_BUILD: "true"
 
   script:
-    - chmod 777 ./execute_front.sh
-    - ./execute_front.sh
+    - python teste.py
     - echo "Guardando evidencia em video"
     - cp -r -i /videos .
   artifacts:
@@ -34,4 +26,5 @@ e2e:
     when: always
     expire_in: "1 days"
     paths:
-      - "./videos"
+      - "./videos"  
+  
