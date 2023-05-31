@@ -5,14 +5,15 @@
 5. Vá para a parte de “CI/CD→Runners” do seu projeto e vá na parte de Runners/Executadores
 6. Desabilite os executores compartilhados
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8bf8cb92-ef62-487c-9047-2acee57489a0/Untitled.png)
+[Como deve ficar sua tela de "CI/CD->Runners"](https://imgur.com/a/h9KZ9He)
 
 1. Clique em New project runner
 2. Crie o runner com qualquer descrição e marque a terceira opção que é para o runner pegar mesmo que não tenha tag
 3. Execute a etapa 1 que aparecerá na tela para registrar o Runner
 4. Assim que registrar, irá aparecer “Você criou um novo executor”
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a71ff0c6-e0c8-474c-869a-6a9ea0f64207/Untitled.png)
+[Criando o Runner local](![image](https://github.com/alexandremariano4/template-gitlab-test/assets/89090315/60027316-e268-4112-9b23-1141f72ef416)
+)
 
 1. Vá para ap ágina dos executores/runners novamente para verificar se o runner está online, se estiver, vá para tela de CI/CD→Pipelines
 2.  Execute um commit ou inicie manualmente a pipeline e veja sendo executado
