@@ -1,0 +1,22 @@
+version: '3.8'
+
+services: 
+  chrome:
+    image: selenium/standalone-chrome
+    shm_size: 2g
+    container_name: chrome-standalone
+    environment:
+      - SE_NODE_MAX_SESSIONS=5
+    ports:
+    - "4444:4444"
+    - "7900:7900"
+
+  chrome-video:
+    depends_on:
+      - chrome
+    image: selenium/video
+    volumes:
+      - ./videos:/videos
+    environment:
+      - DISPLAY_CONTAINER_NAME=chrome
+      - FILE_NAME=chrome_video.mp4

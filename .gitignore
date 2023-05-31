@@ -1,0 +1,26 @@
+#Pycache
+__pycache__/
+__pycache__
+*.pyc
+
+#Driver stuff
+*.log
+
+#Report files
+allure-report
+
+#Environments variables / virtual environment
+.venv
+
+
+#Requirements file to test
+requirements_test.txt
+
+#File to run local
+execute_front.bat
+execute.bat
+# videos
+
+
+#ci yml
+# .gitlab-ci.yml
